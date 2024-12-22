@@ -1,0 +1,24 @@
+<div class="formulario-container">
+    <h2>Formulario del Usuario</h2>
+    <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" [(ngModel)]="usuario.name" > 
+        </div>
+
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+             <input type="text" id="apellido" name="apellido" [(ngModel)]="usuario.apellido">
+        </div>
+       
+        <div class="form-group">
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" [(ngModel)]="usuario.fechaNacimiento" required>
+        </div>
+
+        <div>
+            <button type="submit" class="btn-enviar"  [disabled]="formulario.invalid"> Guardar</button>
+        </div>
+        
+    </form>
+</div>

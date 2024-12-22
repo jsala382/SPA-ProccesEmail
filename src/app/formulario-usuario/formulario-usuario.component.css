@@ -1,0 +1,29 @@
+.formulario-container{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn-enviar{
+    background-color: rgb(25, 162, 208); 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+      
+}

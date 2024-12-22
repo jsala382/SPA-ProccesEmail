@@ -1,0 +1,31 @@
+<div class="validation-container">
+   
+    
+    <img src="assets/imagenes/cfrontal.png" alt="Cedula frontal" class="validation-image">
+
+    <button class="camera-btn"(click)="openCamera()">
+        <i class="fa fa-camera"></i>
+    </button>
+
+    <video #video autoplay style="display: none; width: 100%; max-height: 400px;"></video>
+
+    <button class="camera-btn" (click)="captureImage()" *ngIf="isCameraActive">
+        <i class="fa fa-camera"></i> Capturar Imagen
+    </button>
+
+    <div *ngIf="imageData">
+        <h3>Imagen Capturada</h3>
+        <img [src]="imageData" alt="Cedula Capturada" style="max-width: 100%;height: auto;">
+    </div>
+    <br>
+
+    <div>
+
+        <button (click)="openCamera()" class="retake-btn">
+            <i class="fa fa-refresh"></i>
+        </button>
+        <p>Presione el boton para volver a tomar la foto</p>
+            
+        <button (click)="continue()" class="continue-btn1" routerLink="/formulario-usuario">Continuar</button>
+    </div>
+</div>

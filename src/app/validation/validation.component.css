@@ -1,0 +1,41 @@
+
+
+.validation-container {
+    text-align: center;
+    font-family: 'Arial';
+    padding: 20px;
+}
+
+.btn-regresar {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.validation-image {
+    max-width: 550px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.btn-entendido {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.header-logo{
+    max-width: 250px;
+    height: auto;
+}
